@@ -76,9 +76,13 @@ shift['#'] = 10
 Traverse the target pattern from left to right using the formula<br>
 
 $$ m- i - 1 $$ 
+
 where <br>
+
 $$ m=lengthOfTargetPattern $$
+
 and <br>
+
 $$ i=locationInPattern $$
 
 <br>
