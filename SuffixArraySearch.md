@@ -131,19 +131,19 @@ Problem: Find repeats in the text of size `m = 3`
 | 1           |3            |e              |#sells#shells!   |
 | 2           |9            |s              |#shells!         |
 | 3           |2            |h              |e#sells#shells!  |
-| 4           |12           |h              |<mark>ell</mark>s!            |
-| 5           |5            |s              |<mark>ell</mark>s#shells!     |
+| 4           |12           |h              |`ell`s!            |
+| 5           |5            |s              |`ell`s#shells!     |
 | 6           |1            |s              |he#sells#shells! |
 | 7           |1            |s              |#hells!          |
-| 8           |13           |e              |<mark>lls</mark>!             |
-| 9           |6            |e              |<mark>lls</mark>#shells!      |
+| 8           |13           |e              |`lls`!             |
+| 9           |6            |e              |`lls`#shells!      |
 | 10          |14           |l              |ls!              | 
 | 11          |7            |l              |ls#shells!       |
 | 12          |15           |l              |s!               |
 | 13          |8            |l              |s#shells!        |
 | 14          |4            |#              |sells#shells!    |
-| 15          |0            |!              |<mark>she</mark>#sells#shells!|
-| 16          |10           |#              |<mark>she</mark>lls!          |
+| 15          |0            |!              |`she`#sells#shells!|
+| 16          |10           |#              |`she`lls!          |
 
 Have to check each suffix with the next suffix along<br>
 Must be equal up to the index `m-1`<br>
