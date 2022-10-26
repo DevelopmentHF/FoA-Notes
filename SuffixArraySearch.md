@@ -114,3 +114,36 @@ We found `hell`!<br>
 
 Takes O(log(n)) string comparisons via the total text, with each of these taking m character comparisons.<br>
 Total time complexity is O(mlog(n)) == O(targetPatternLen * log(textLen))<br>
+
+<br>
+
+---
+
+<br>
+
+## Suffix array repetitions
+
+Problem: Find repeats in the text of size `m = 3`
+
+|i (suffixLen)|suffixes[i]  |preceder[i]    |text[i...]       |
+| :---:       |    :---:    |    :---:      |            ---: |
+| 0           |16           |s              |!                |
+| 1           |3            |e              |#sells#shells!   |
+| 2           |9            |s              |#shells!         |
+| 3           |2            |h              |e#sells#shells!  |
+| 4           |12           |h              |<mark>ell</mark>s!            |
+| 5           |5            |s              |<mark>ell</mark>s#shells!     |
+| 6           |1            |s              |he#sells#shells! |
+| 7           |1            |s              |#hells!          |
+| 8           |13           |e              |<mark>lls</mark>!             |
+| 9           |6            |e              |<mark>lls</mark>#shells!      |
+| 10          |14           |l              |ls!              | 
+| 11          |7            |l              |ls#shells!       |
+| 12          |15           |l              |s!               |
+| 13          |8            |l              |s#shells!        |
+| 14          |4            |#              |sells#shells!    |
+| 15          |0            |!              |<mark>she</mark>#sells#shells!|
+| 16          |10           |#              |<mark>she</mark>lls!          |
+
+Have to check each suffix with the next suffix along<br>
+Must be equal up to the index `m-1`<br>
