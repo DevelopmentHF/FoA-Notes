@@ -147,3 +147,36 @@ Problem: Find repeats in the text of size `m = 3`
 
 Have to check each suffix with the next suffix along<br>
 Must be equal up to the index `m-1`<br>
+
+<br>
+
+---
+
+<br>
+
+## Generating suffix arrays
+
+### Simple approach:
+
+Use an O(`n`log(`n`))-string-comparisons sorting algo. (i.e Mergesort)<br>
+Each string comparison may need `n` steps.<br>
+Overall, O(`n`^2 * log(`n`)) average, O(`n`^3) worst case. <br>
+
+### Complex approach:
+Use ternary quicksort on the unsorted suffix array<br>
+
+>View lecture06-h 14:00 onwards for in depth analysis on this technique
+
+```c
+tquicksort(S,n, depth) {
+    p = text[S[i] + depth];
+    (fe, fg) = partition(S, n, p, depth);
+    tquicksort(S, fe, depth);
+    tquicksort(S+fe, fg-fe, depth+1);
+    tquicksort(S+fg, n-fg, depth);
+}
+
+tquicksort(S, n, 0); // initial call
+```
+
+This can save a factor of `n` from the execution time. <br>
