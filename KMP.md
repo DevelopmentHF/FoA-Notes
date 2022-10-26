@@ -210,6 +210,6 @@ while (s < targetLen) {
 
 Number of loop iterations is at max 2*totalLen + targetLen == (2n+m)<br>
 Regular sequential pattern search is O(nm).<br>
-Thus, KMP is O(totalLen) == O(n)<br>
+Thus, KMP is O(totalLen) == O(m+n) == O(n)<br>
 Failure array takes O(targetLen) == O(m) time to create. <br>
 This preprocessing does not dominate the algorithm. <br>

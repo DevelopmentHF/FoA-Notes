@@ -53,6 +53,7 @@ Repeat.
 
 ## Constructing a shift array 
 
+
 For each letter in the **total text** string, how many times can we shift the target pattern forward before reaching alignment?<br>
 
 <br>
