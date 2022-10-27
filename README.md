@@ -15,6 +15,7 @@ I have attempted to explain things in a general format as well at the start of e
 
 -KMP Searching<br>
 -BMH Searching<br>
+-Suffix Array Creation and Utilisation<br>
 
 <br>
 
