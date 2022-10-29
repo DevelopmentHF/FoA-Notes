@@ -22,6 +22,7 @@ I have attempted to explain things in a general format as well at the start of e
 
 -Sorting<br>
 - Quicksort<br>
+- Mergesort<br>
 
 
 
