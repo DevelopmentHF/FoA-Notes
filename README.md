@@ -13,9 +13,17 @@ I have attempted to explain things in a general format as well at the start of e
 
 <br>
 
--KMP Searching<br>
--BMH Searching<br>
--Suffix Array Creation and Utilisation<br>
+-Searching<br>
+- KMP Searching<br>
+- BMH Searching<br>
+- Suffix array creation and utilisation<br>
+
+<br>
+
+-Sorting<br>
+- Quicksort<br>
+
+
 
 <br>
 
