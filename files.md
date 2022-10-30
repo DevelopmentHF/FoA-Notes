@@ -70,6 +70,13 @@ fread(void* ptr, size_t size, size_t nelem, FILE* fp);
 
 Returns the number of values successfully read into the array `ptr`. <br>
 
+To read a line from a file and store in a string: <br>
+```c
+char*
+fgets(char* str, int n, FILE* fp);
+```
+
+
 <br>
 
 ---
@@ -92,13 +99,6 @@ Returns `0` on success or `EOF` on failure. <br>
 
 <br>
 
-## Other
 
 >***IMPORTANT***: After **each** file operation, make sure to check for failures through assertions. <br>
 >For example, after assigning a file pointer through fopen(), assert that fp != NULL. <br>
-
-Read a line from a fle and store in a string: <br>
-```c
-char*
-fgets(char* str, int n, FILE* fp);
-```
