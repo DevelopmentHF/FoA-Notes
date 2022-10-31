@@ -32,6 +32,7 @@ I have attempted to explain things in a general format as well at the start of e
 - Hexadecimal representations
 - 32-bit floating point encoding
 - File operations in C
+- Hashing
 
 
 <br>
