@@ -3,7 +3,7 @@
 ## General overview
 
 Use a hash function `h(x)` to construct a ***random*** integer from any key value. <br>
-Should generate a number `0` to `t-1` such that for `n` keys:
+Should generate a number `0` to `t-1` such that for `n` keys:<br>
 
 $$ 0.5 <= n/t <= 4 $$
 
