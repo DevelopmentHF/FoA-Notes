@@ -8,9 +8,11 @@
 
 Binary is a base-2 counting system. <br>
 Take the number `13`, which results in the binary form `1101`: <br>
+
 $$ (1 * 2^3) + (1 * 2^2) + (0 * 2^1) + (1* 2^0) $$
 
 >An equivalent breakdown of `345` in integer form goes as follows: <br>
+>
 >$$ (3 * 10^2) + (4 * 10^1) + (5 * 10^0) $$
 
 The largest number that can be stored in binary depends on an `X-bit` system. <br>
