@@ -28,8 +28,8 @@ After this, you ***must rehash*** all of the `n` items into the larger set.<br>
 
 Dictionary data structures and their complexities:
 
-|Structure|Insert|Search|Delete|Smallest|Next||
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|Structure|Insert|Search|Delete|Smallest|Next|
+|:--:     |:--:  |:--:  |:--:  |:--:    |:--:|
 |Unsorted Array|O(1)|O(n)|O(n)|O(n)|O(n)|
 |Sorted Array|O(n)|O(logn)|O(n)|O(1)|O(1)|
 |Unsorted Linked List|O(1)|O(n)|O(1)|O(n)|O(n)|
